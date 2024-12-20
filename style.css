@@ -1,0 +1,409 @@
+/* Réinitialisation des marges et paddings */
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* Corps de la page */
+body {
+    font-family: Arial, sans-serif !important;
+}
+
+
+/* Section Accueil avec image de fond */
+#accueil {
+    position: relative !important;
+    background-image: url('images/backround.webp')!important; /* Remplace par le chemin de ton image */
+    background-size: cover !important;
+    background-position: center !important;
+    height: 100vh !important;
+    color: white !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+}
+
+/* Superposition sombre pour le contraste */
+#accueil::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: rgba(0, 0, 0, 0.5) !important; /* Noir à 50% d'opacité */
+    z-index: 1 !important;
+}
+
+/* En-tête : Logo, Navigation et Réseaux sociaux */
+.header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 20px !important;
+    position: absolute !important;
+    top: 0 !important;
+    z-index: 2 !important;
+}
+
+.logo {
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+}
+
+.nav ul {
+    list-style: none !important;
+    display: flex !important;
+    gap: 20px !important;
+}
+
+.nav ul li a {
+    text-decoration: none !important;
+    color: white !important;
+    font-weight: bold !important;
+    transition: color 0.3s !important;
+}
+
+.nav ul li a:hover {
+    text-decoration: underline !important; /* Couleur au survol */
+}
+
+.social-icons a {
+    color: white !important;
+    margin-left: 15px !important;
+    font-size: 1.2rem !important;
+    text-decoration: none !important;
+}
+
+.social-icons a:hover {
+    color: black !important;
+}
+.social-icons a:last-child {
+    display: none;
+}
+
+/* Contenu principal */
+.accueil {
+    position: relative !important;
+    z-index: 2 !important;
+    max-width: 600px !important;
+    margin-top: 100px !important;
+}
+
+.accueil h1 {
+    font-size: 2.5rem !important;
+    margin-bottom: 20px !important;
+}
+
+.accueil p {
+    font-size: 1.2rem !important;
+    margin-bottom: 30px !important;
+}
+
+/* Bouton */
+ .btn {
+    display: inline-block !important;
+    background-color: #cedae7 !important;
+    color: black !important;
+    padding: 10px 20px !important;
+    text-decoration: none !important;
+    border-radius: 5px !important;
+    font-size: 1.3rem !important;
+    transition: background-color 0.3s !important;
+}
+
+.btn:hover {
+    background-color: #595e64 !important;
+}
+
+/* Style personnalisé pour la section Soins */
+#apropos {
+    background-color: #f0f8ff !important; /* Priorité absolue */
+}
+
+#apropos h2 {
+    font-size: 2.5rem;;
+    font-weight: bold;
+}
+
+#apropos p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+#apropos .btn {
+    background-color: #0056b3;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+#apropos .btn:hover {
+    background-color: #003f7f;
+}
+/* Assure que les cartes sont flexibles */
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Prend toute la hauteur */
+}
+
+/* Alignement du texte en bas si nécessaire */
+.card-body {
+    flex-grow: 1; /* Fait grandir le contenu pour occuper l'espace disponible */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Ombre légère pour améliorer le style */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+/* Section Blog */
+#blog {
+    background-color: #f8f9fa; /* Gris clair */
+}
+
+#blog h2 {
+    color: #007BFF; /* Bleu moderne */
+    font-weight: bold;
+}
+
+.blog-card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card img {
+    height: 200px; /* Taille uniforme pour les images */
+    object-fit: cover; /* Ajuste l'image sans déformation */
+}
+
+.blog-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card .card-title {
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.blog-card .card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+.blog-card .btn-primary {
+    background-color: #007BFF !important;
+    border: none !important;
+}
+
+.blog-card .btn-primary:hover {
+    background-color: #0056b3 !important;
+}
+
+/* Section Contact */
+#contact {
+    background-color: #f8f9fa;
+}
+
+/* Cartes */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.card .btn {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Formulaire */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 50%;
+}
+
+form .form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form .btn {
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Mise en page */
+#contact h4 {
+    font-size: 1.4rem;
+    margin-top: 20px;
+}
+
+#contact #adress address {
+    font-style: bold;
+    color: black;
+}
+#contact #adress address a {
+    text-decoration: none;
+}
+#contact #adress address a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+    .card {
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Start footer section*/
+.footer_section {
+    background-color: #222831;
+    color: #ffffff;
+    padding: 75px 0 40px 0;
+    text-align: center;
+  }
+  
+  .footer_section h4 {
+    font-size: 28px;
+  }
+  
+  .footer_section h4,
+  .footer_section .footer-logo {
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  .footer_section p {
+    color: #dbdbdb;
+  }
+  
+  .footer_section .footer-col {
+    margin-bottom: 30px;
+  }
+  
+  .footer_section .footer_contact .contact_link_box {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer_section .footer_contact .contact_link_box a {
+    margin: 5px 0;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footer_section .footer_contact .contact_link_box a i {
+    margin-right: 5px;
+  }
+  
+  .footer_section .footer_contact .contact_link_box a:hover {
+    color: #ffbe33;
+  }
+  
+  .footer_section .footer-logo {
+    display: block;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 1;
+    color: #ffffff;
+  }
+  
+  .footer_section .footer_social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    gap: 20px;
+  }
+  
+  .footer_section .footer_social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222831;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    border-radius: 100%;
+    margin: 0 2.5px;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .footer_section .footer_social a:hover {
+    color: #ffbe33;
+  }
+  
+  .footer_section .footer-info {
+    text-align: center;
+    margin-top: 25px;
+  }
+  
+  .footer_section .footer-info p {
+    color: #ffffff;
+    margin: 0;
+  }
+  /* End footer section*/
+
+@media screen and (max-width:700px){
+    nav ul a{
+        display: none;
+    }
+    .social-icons a{
+        display: none;
+    }
+    .social-icons a:last-child{
+        display:block ;
+        font-size: x-large;
+    }
+    .nav-center {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+
