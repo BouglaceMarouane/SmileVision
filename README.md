@@ -36,3 +36,15 @@ SmileVision/
 ## Contributing
 
 Contributions are welcome! If you have suggestions or improvements, please submit a pull request or open an issue.
+
+## ⭐ Support
+If you like this project, don't forget to leave a ⭐ on GitHub. Thank you and happy coding! 🚀
+
+## 📬 Stay in Touch
+- 📧 **Email**: bouglacemarouane@gmail.com
+- 🌐 **GitHub**: [Bouglace Marouane](https://github.com/bouglacemarouane)
+- 🌍 **LinkedIn**: [Marouane Bouglace](https://linkedin.com/in/marouane-bouglace)
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=60&section=footer"/>
+</p>
