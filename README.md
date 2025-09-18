@@ -32,3 +32,7 @@ SmileVision/
 2. Open index.html in your preferred web browser.
 
 3. Explore the interface and features.
+
+## Contributing
+
+Contributions are welcome! If you have suggestions or improvements, please submit a pull request or open an issue.
